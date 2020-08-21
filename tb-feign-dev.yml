@@ -1,2 +1,15 @@
 my:
-  name: 王富贵123
+  name: 王富贵
+spring:
+  sleuth:
+    sampler:
+      probability: 1 
+  zipkin:
+    base-url: http://localhost:9411
+    sender:
+      type: rabbit 
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
